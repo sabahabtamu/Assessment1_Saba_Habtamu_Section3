@@ -16,7 +16,7 @@ body {
  
 h1 {
     padding: 1.5rem;
-    background-color: rgb(217, 238, 217);
+    background-color: #d9eed9;
     text-align: center;
 }
 
@@ -38,7 +38,7 @@ nav ul li {
 
 li a {
     text-decoration: none;
-    color: rgb(13, 183, 134);
+    color: #4CAF50;
     transition: all .1s;
 }
 
@@ -53,7 +53,7 @@ li a:hover {
 }
 
 section {
-    margin-bottom: 1.5rem;
+    margin: 3rem 2rem 5rem;
 }
 
 section h2{
@@ -61,10 +61,10 @@ section h2{
 }
 
 section .container{
-    margin-left: 1.5rem;
+    margin: 0 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1.5rem;
+    column-gap: 4rem;
 }
 
 .container .content {
@@ -74,28 +74,14 @@ section .container{
     align-items: center;
     text-align: center;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    border-radius: .4rem;
 }
 
 .container .content img {
     margin-bottom: 1rem;
-}
-
-section .container .content:nth-child(1) img{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;           
-}
-
-section .container .content:nth-child(3) img{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;           
-}
-
-section .container .content:nth-child(2) img{
-    width: 100%;
-    height: 40%;
-    object-fit: cover;           
+    border-radius: .4rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .content h2 + p {
@@ -112,23 +98,50 @@ section .container .content:nth-child(2) img{
     padding: 1.2rem;
     text-align: center;
     color: #fff;
-    background-color: rgb(14, 59, 19);
+    background-color: #124314;
 }
 
 @media screen and (max-width: 768px) {
+
+    ul li a  {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    section {
+        margin: 3rem 1rem;
+    }
+
     section .container {
+        margin: 1rem;
         display: flex;
         flex-direction: column;
-        row-gap: 1rem;
+        row-gap: 2.5rem;
     }
 }
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (min-width: 769px) and (max-width: 1043px) {
+    ul li a  {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    section {
+        margin: 3rem 1rem;
+    }
+
     section .container {
+        margin: 1rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 2.5rem;
         
     }
 }
-
